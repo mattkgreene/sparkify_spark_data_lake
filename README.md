@@ -93,19 +93,3 @@ The etl.py script currently takes an undefined amount of time.  The internet ing
 etl.py takes a while to run in Hadoop Version 2.7.4.  I had to run this script in a workspace that isn't able to be upgraded to Hadoop 3.3.1, which is the only way my project doesn't hang with this script.
 
 Thus if you want to run etl.py make sure you have Hadoop 3.3.1 installed in your environment and change line 26 in both etl.py and simple_etl.py from: ".config("spark.jars.packages", "org.apache.hadoop:hadoop-aws:2.7.4")" to ".config("spark.jars.packages", "org.apache.hadoop:hadoop-aws:3.3.1")" as that'll make the code run a ton faster... like nearly 200%.
-
-
-
-
-
-
-
-## OPTIONAL: Question for the reviewer
- 
-If you have any question about the starter code or your own implementation, please add it in the cell below. 
-
-For example, if you want to know why a piece of code is written the way it is, or its function, or alternative ways of implementing the same functionality, or if you want to get feedback on a specific part of your code or get feedback on things you tried but did not work.
-
-Please keep your questions succinct and clear to help the reviewer answer them satisfactorily. 
-
-> **How can I get my local code to run faster?**
