@@ -45,7 +45,8 @@ user_id, first_name, last_name, gender, level
 
 #### songs
 -- songs in music database
-##### schema: song_id, title, artist_id, year, duration
+##### schema: 
+song_id, title, artist_id, year, duration
 
 #### artists
 -- artists in music database
